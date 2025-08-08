@@ -17,6 +17,15 @@
 
   gtag('config', 'G-6F4MR5DXQ0');
 </script>
+<!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '1722544');
+</script>
+<!-- End MailerLite Universal -->
 <!-- Tailwind CSS -->
 <script src="https://cdn.tailwindcss.com"></script>
 <!-- Inter Font -->
@@ -166,9 +175,12 @@
 <a class="text-white hover:text-yellow-400 transition-colors duration-300" href="#products">Products</a>
 <a class="text-white hover:text-yellow-400 transition-colors duration-300" href="#benefits">Benefits</a>
 <a class="text-white hover:text-yellow-400 transition-colors duration-300" href="#faq">FAQ</a>
-<button class="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-6 py-2 rounded-full font-semibold hover:scale-105 transform transition-all duration-300 hover:shadow-lg" onclick="scrollToProducts()">
-                        Start Free
-                    </button>
+<button 
+    class="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-6 py-2 rounded-full font-semibold hover:scale-105 transform transition-all duration-300 hover:shadow-lg ml-onclick-form" 
+    onclick="ml('show', 'LL7178', true)">
+    Download free eBook
+</button>
+
 </div>
 <div class="md:hidden">
 <button class="text-white" id="mobile-menu-button">
@@ -184,9 +196,10 @@
 <a class="block text-white hover:text-yellow-400 transition-colors duration-300" href="#products">Products</a>
 <a class="block text-white hover:text-yellow-400 transition-colors duration-300" href="#benefits">Benefits</a>
 <a class="block text-white hover:text-yellow-400 transition-colors duration-300" href="#faq">FAQ</a>
-<button class="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-6 py-2 rounded-full font-semibold" onclick="scrollToProducts()">
-                    Start Free
-                </button>
+<button class="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-6 py-2 rounded-full font-semibold" onclick="ml('show', 'LL7178', true)">
+    Start Free
+</button>
+
 </div>
 </div>
 </nav>
@@ -582,9 +595,9 @@
 <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">From ₱0 to Profit — Your Digital Business Starts Now</h2>
 <p class="text-lg md:text-xl mb-12 text-gray-300 max-w-3xl mx-auto">Choose your package and start building your digital empire today!</p>
 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-<button class="bg-green-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-700 hover:scale-105 transform transition-all duration-300 relative overflow-hidden">
-                        Start Free
-                    </button>
+<button class="bg-green-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-700 hover:scale-105 transform transition-all duration-300 relative overflow-hidden" onclick="ml('show', 'LL7178', true)">
+    Start Free
+</button>
 <button class="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-8 py-4 rounded-full font-semibold hover:scale-105 transform transition-all duration-300 relative overflow-hidden">
                         Level Up
                     </button>
@@ -644,7 +657,9 @@
 
 <div class="fixed bottom-0 left-0 w-full bg-white shadow-md p-3 flex justify-between items-center md:hidden z-50">
 <span class="font-medium text-sm">Start for ₱0 →</span>
-<a class="bg-yellow-400 text-black px-4 py-2 rounded font-bold" href="#tiers">Claim Now</a>
+<a class="bg-yellow-400 text-black px-4 py-2 rounded font-bold" href="javascript:void(0);" onclick="ml('show', 'LL7178', true)">
+    Claim Now
+</a>
 </div>
 </body>
 </html>
