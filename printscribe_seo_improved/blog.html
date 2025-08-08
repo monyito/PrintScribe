@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Blog & Guides - PrintScribe Digital</title>
+    <meta content="Discover tips, guides, and insights for starting your digital product business in the Philippines. Learn from experts and grow your online income." name="description"/>
+    <link rel="canonical" href="https://printscribe.ph/blog.html" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .navbar-blur {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .blog-card {
+            transition: all 0.3s ease;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blog-card:hover .blog-image {
+            transform: scale(1.05);
+        }
+        
+        .blog-image {
+            transition: transform 0.3s ease;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter text-gray-900 bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black/95 navbar-blur z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="/" class="text-xl font-bold text-white">
+                        PrintScribe<span class="text-yellow-400">Digital</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a class="text-white hover:text-yellow-400 transition-colors duration-300" href="/#about">About</a>
+                    <a class="text-white hover:text-yellow-400 transition-colors duration-300" href="/#products">Products</a>
+                    <a class="text-white hover:text-yellow-400 transition-colors duration-300" href="/#benefits">Benefits</a>
+                    <a class="text-white hover:text-yellow-400 transition-colors duration-300" href="/#faq">FAQ</a>
+                    <a class="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-6 py-2 rounded-full font-semibold hover:scale-105 transform transition-all duration-300 hover:shadow-lg" href="/#products">
+                        Start Free
+                    </a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-white" id="mobile-menu-button">
+                        <i class="w-6 h-6" data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-black/95 border-t border-gray-800" id="mobile-menu">
+            <div class="px-4 py-4 space-y-4">
+                <a class="block text-white hover:text-yellow-400 transition-colors duration-300" href="/#about">About</a>
+                <a class="block text-white hover:text-yellow-400 transition-colors duration-300" href="/#products">Products</a>
+                <a class="block text-white hover:text-yellow-400 transition-colors duration-300" href="/#benefits">Benefits</a>
+                <a class="block text-white hover:text-yellow-400 transition-colors duration-300" href="/#faq">FAQ</a>
+                <a class="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-6 py-2 rounded-full font-semibold block text-center" href="/#products">
+                    Start Free
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-black via-gray-900 to-black text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="fade-in-up">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                    📚 Blog & Guides
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Discover expert tips, step-by-step guides, and proven strategies to build your digital product business. 
+                    From beginner tutorials to advanced marketing tactics - we've got you covered!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content Section -->
+    <main class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Featured Article -->
+            <section class="mb-16">
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden fade-in-up">
+                    <div class="md:flex">
+                        <div class="md:w-1/2">
+                            <div class="h-64 md:h-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center">
+                                <div class="text-center text-black p-8">
+                                    <i class="w-16 h-16 mx-auto mb-4" data-feather="trending-up"></i>
+                                    <h3 class="text-2xl font-bold">Featured Guide</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 p-8 md:p-12">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Featured</span>
+                                <span class="text-gray-500 ml-4 text-sm">August 7, 2025</span>
+                            </div>
+                            <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
+                                Complete Guide: From ₱0 to Your First ₱10,000 in Digital Sales
+                            </h2>
+                            <p class="text-gray-700 leading-relaxed mb-6">
+                                Learn the exact step-by-step process to launch your first digital product, set up payment systems, 
+                                and scale to ₱10,000 in monthly revenue. Perfect for complete beginners with zero experience.
+                            </p>
+                            <button class="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transform transition-all duration-300 inline-flex items-center">
+                                Read Full Guide
+                                <i class="w-4 h-4 ml-2" data-feather="arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog Categories -->
+            <section class="mb-12">
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <button class="category-filter active bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition-colors duration-300" data-category="all">
+                        All Posts
+                    </button>
+                    <button class="category-filter bg-white text-gray-700 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors duration-300 border" data-category="beginner">
+                        Beginner Tips
+                    </button>
+                    <button class="category-filter bg-white text-gray-700 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors duration-300 border" data-category="marketing">
+                        Marketing
+                    </button>
+                    <button class="category-filter bg-white text-gray-700 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors duration-300 border" data-category="tools">
+                        Tools & Resources
+                    </button>
+                    <button class="category-filter bg-white text-gray-700 px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors duration-300 border" data-category="success">
+                        Success Stories
+                    </button>
+                </div>
+            </section>
+
+            <!-- Blog Grid -->
+            <section id="blog-grid">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Blog Card 1 -->
+                    <article class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in-up" data-category="beginner">
+                        <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center overflow-hidden">
+                            <i class="w-12 h-12 text-white blog-image" data-feather="book-open"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Beginner</span>
+                                <span class="text-gray-500 ml-auto text-sm">Aug 5, 2025</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-900">5 Digital Products You Can Create Today (No Skills Required)</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Discover simple digital products that anyone can create using free tools. Perfect for absolute beginners who want to start earning online immediately.
+                            </p>
+                            <button class="text-yellow-600 font-semibold hover:text-yellow-700 transition-colors duration-300 inline-flex items-center">
+                                Read More
+                                <i class="w-4 h-4 ml-1" data-feather="arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Blog Card 2 -->
+                    <article class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in-up" data-category="marketing">
+                        <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center overflow-hidden">
+                            <i class="w-12 h-12 text-white blog-image" data-feather="megaphone"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Marketing</span>
+                                <span class="text-gray-500 ml-auto text-sm">Aug 3, 2025</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-900">Facebook Marketing for Digital Products: A Filipino's Guide</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Learn how to effectively market your digital products on Facebook using Taglish content that resonates with Filipino audiences.
+                            </p>
+                            <button class="text-yellow-600 font-semibold hover:text-yellow-700 transition-colors duration-300 inline-flex items-center">
+                                Read More
+                                <i class="w-4 h-4 ml-1" data-feather="arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Blog Card 3 -->
+                    <article class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in-up" data-category="tools">
+                        <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center overflow-hidden">
+                            <i class="w-12 h-12 text-white blog-image" data-feather="tool"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Tools</span>
+                                <span class="text-gray-500 ml-auto text-sm">Aug 1, 2025</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-900">Best Free Canva Alternatives for Creating Digital Products</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Explore powerful free design tools that can help you create professional-looking digital products without spending a peso.
+                            </p>
+                            <button class="text-yellow-600 font-semibold hover:text-yellow-700 transition-colors duration-300 inline-flex items-center">
+                                Read More
+                                <i class="w-4 h-4 ml-1" data-feather="arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Blog Card 4 -->
+                    <article class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in-up" data-category="success">
+                        <div class="h-48 bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center overflow-hidden">
+                            <i class="w-12 h-12 text-white blog-image" data-feather="star"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Success Story</span>
+                                <span class="text-gray-500 ml-auto text-sm">Jul 30, 2025</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-900">How Maria Earned ₱50,000 in 3 Months Selling Digital Planners</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Read Maria's inspiring journey from OFW to successful digital entrepreneur, including her exact strategies and lessons learned.
+                            </p>
+                            <button class="text-yellow-600 font-semibold hover:text-yellow-700 transition-colors duration-300 inline-flex items-center">
+                                Read More
+                                <i class="w-4 h-4 ml-1" data-feather="arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Blog Card 5 -->
+                    <article class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in-up" data-category="beginner">
+                        <div class="h-48 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center overflow-hidden">
+                            <i class="w-12 h-12 text-white blog-image" data-feather="dollar-sign"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">Beginner</span>
+                                <span class="text-gray-500 ml-auto text-sm">Jul 28, 2025</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-900">GCash vs PayPal: Which Payment Method is Best for Filipino Sellers?</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Compare the pros and cons of different payment methods for selling digital products in the Philippines.
+                            </p>
+                            <button class="text-yellow-600 font-semibold hover:text-yellow-700 transition-colors duration-300 inline-flex items-center">
+                                Read More
+                                <i class="w-4 h-4 ml-1" data-feather="arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Blog Card 6 -->
+                    <article class="blog-card bg-white rounded-2xl shadow-lg overflow-hidden fade-in-up" data-category="marketing">
+                        <div class="h-48 bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center overflow-hidden">
+                            <i class="w-12 h-12 text-white blog-image" data-feather="trending-up"></i>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-medium">Marketing</span>
+                                <span class="text-gray-500 ml-auto text-sm">Jul 25, 2025</span>
+                            </div>
+                            <h3 class="text-xl font-bold mb-3 text-gray-900">TikTok Marketing for Digital Products: Complete 2025 Guide</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Master TikTok marketing to reach younger Filipino audiences and boost your digital product sales organically.
+                            </p>
+                            <button class="text-yellow-600 font-semibold hover:text-yellow-700 transition-colors duration-300 inline-flex items-center">
+                                Read More
+                                <i class="w-4 h-4 ml-1" data-feather="arrow-right"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="text-center mt-12">
+                    <button id="load-more-btn" class="bg-white text-gray-700 px-8 py-4 rounded-full font-semibold border-2 border-gray-200 hover:border-yellow-400 hover:text-yellow-600 transition-all duration-300 inline-flex items-center">
+                        Load More Articles
+                        <i class="w-4 h-4 ml-2" data-feather="chevron-down"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Newsletter Signup -->
+            <section class="mt-20">
+                <div class="bg-gradient-to-br from-black via-gray-900 to-black rounded-2xl p-8 md:p-12 text-center text-white">
+                    <div class="max-w-2xl mx-auto">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-4">Stay Updated with Our Latest Guides</h2>
+                        <p class="text-gray-300 mb-8 leading-relaxed">
+                            Get weekly tips, exclusive strategies, and early access to new digital product templates. 
+                            Join 5,000+ Filipino entrepreneurs building their online businesses.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                            <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-full text-gray-900 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+                            <button class="bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transform transition-all duration-300">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div class="text-center md:text-left">
+                    <span class="text-2xl font-bold">
+                        PrintScribe<span class="text-yellow-400">Digital</span>
+                    </span>
+                    <p class="mt-4 text-gray-400">Empowering Filipinos to start their digital business journey</p>
+                </div>
+                <div class="text-center">
+                    <h4 class="text-yellow-400 font-semibold mb-4 flex items-center justify-center md:justify-start">
+                        <i class="w-5 h-5 mr-2" data-feather="mail"></i>
+                        Contact
+                    </h4>
+                    <p class="text-gray-400">admin@printscribe.ph</p>
+                </div>
+                <div class="text-center md:text-right">
+                    <h4 class="text-yellow-400 font-semibold mb-4 flex items-center justify-center md:justify-start">
+                        <i class="w-5 h-5 mr-2" data-feather="file-text"></i>
+                        Legal
+                    </h4>
+                    <div class="space-y-2">
+                        <a class="block text-gray-400 hover:text-yellow-400 transition-colors duration-300" href="/privacy-policy.html">Privacy Policy</a>
+                        <a class="block text-gray-400 hover:text-yellow-400 transition-colors duration-300" href="/terms-of-service.html">Terms of Service</a>
+                        <a class="block text-gray-400 hover:text-yellow-400 transition-colors duration-300" href="/blog.html">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">© 2025 PrintScribe Digital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Feather icons
+        feather.replace();
+        
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button')?.addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileMenu) {
+                mobileMenu.classList.toggle('hidden');
+            }
+        });
+
+        // Fade in animation on scroll
+        function fadeInOnScroll() {
+            const elements = document.querySelectorAll('.fade-in-up');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        // Category filtering
+        function initCategoryFilter() {
+            const filterButtons = document.querySelectorAll('.category-filter');
+            const blogCards = document.querySelectorAll('.blog-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const category = button.getAttribute('data-category');
+                    
+                    // Update active button
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('active', 'bg-black', 'text-white');
+                        btn.classList.add('bg-white', 'text-gray-700', 'border');
+                    });
+                    button.classList.add('active', 'bg-black', 'text-white');
+                    button.classList.remove('bg-white', 'text-gray-700', 'border');
+                    
+                    // Filter blog cards
+                    blogCards.forEach(card => {
+                        if (category === 'all' || card.getAttribute('data-category') === category) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        }
+
+        // Load more functionality (placeholder)
+        document.getElementById('load-more-btn')?.addEventListener('click', function() {
+            // This would typically load more blog posts via AJAX
+            // For now, it's just a placeholder
+            this.innerHTML = '<i class="w-4 h-4 mr-2" data-feather="loader"></i>Loading...';
+            feather.replace();
+            
+            setTimeout(() => {
+                this.innerHTML = 'No more articles to load';
+                this.disabled = true;
+                this.classList.add('opacity-50', 'cursor-not-allowed');
+            }, 2000);
+        });
+
+        // Initialize everything when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            fadeInOnScroll();
+            initCategoryFilter();
+        });
+
+        // Run fade in animation on scroll
+        window.addEventListener('scroll', fadeInOnScroll);
+    </script>
+</body>
+</html>
+
