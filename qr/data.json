@@ -1,0 +1,77 @@
+{
+  "default": {
+    "name": "Guest",
+    "message": "Welcome to your personalized Sintra board! This is a beautiful custom piece created just for you.",
+    "digitalCopy": "files/logo1.png"
+  },
+  "sky001": {
+    "name": "Xavier Sky",
+    "message": "Thank you for choosing Sintra Board! Your custom design reflects your unique style and personality. We hope you love this special piece as much as we enjoyed creating it for you.",
+    "digitalCopy": [
+      "files/customer-images/4.png",
+      "files/customer-images/5.png",
+      "files/customer-images/6.png",
+      "files/customer-images/7.png"
+    ]
+  },
+  "yuricookie001": {
+    "name": "Yuri & cookei",
+    "message": "As one of our VIP customers, you receive this exclusive Sintra board design...",
+    "digitalCopy": [
+      "files/customer-images/1.png",
+      "files/customer-images/2.png",
+      "files/customer-images/3.png"
+    ]
+  },
+  "aaliyah001": {
+    "name": "aaliyah",
+    "message": "As one of our VIP customers, you receive this exclusive Sintra board design...",
+    "digitalCopy": [
+      "files/customer-images/33.png",
+      "files/customer-images/44.png",
+      "files/customer-images/55.png"
+    ]
+  },
+  "vip013": {
+    "name": "VIP Customer",
+    "message": "As one of our VIP customers, you receive this exclusive Sintra board design...",
+    "digitalCopy": [
+      "files/customer-images/13.png",
+      "files/customer-images/14.png",
+      "files/customer-images/15.png"
+    ]
+  },
+  "rose001": {
+    "name": "Rose",
+    "message": "As one of our VIP customers, you receive this exclusive Sintra board design...",
+    "digitalCopy": [
+      "files/customer-images/11.png",
+      "files/customer-images/22.png"
+    ]
+  },
+  "mamapapa001": {
+    "name": "Mama & Papa",
+    "message": "Your Sintra board represents hours of careful craftsmanship and attention to detail. Each element was thoughtfully chosen to create something truly one-of-a-kind for you.",
+    "digitalCopy": "files/customer-images/10.png"
+  },
+  "vip016": {
+    "name": "VIP Customer",
+    "message": "We're thrilled to present your personalized Sintra board! This piece captures your vision and brings it to life in a stunning visual format.",
+    "digitalCopy": "files/customer-images/16.png"
+  },
+  "vip018": {
+    "name": "VIP Customer",
+    "message": "We're thrilled to present your personalized Sintra board! This piece captures your vision and brings it to life in a stunning visual format.",
+    "digitalCopy": "files/customer-images/18.png"
+  },
+  "vip019": {
+    "name": "VIP Customer",
+    "message": "We're thrilled to present your personalized Sintra board! This piece captures your vision and brings it to life in a stunning visual format.",
+    "digitalCopy": "files/customer-images/88.png"
+  },
+  "demo": {
+    "name": "Demo User",
+    "message": "This is a demonstration of how your personalized Sintra board experience would look. Each customer receives a unique design tailored to their preferences.",
+    "digitalCopy": "files/customer-images/demo_board.png"
+  }
+}
