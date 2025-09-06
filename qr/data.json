@@ -49,6 +49,14 @@
       "files/customer-images/22.png"
     ]
   },
+  "vip020": {
+    "name": "VIP Customer",
+    "message": "Your Sintra board represents hours of careful craftsmanship and attention to detail. Each element was thoughtfully chosen to create something truly one-of-a-kind for you.",
+    "digitalCopy": [
+      "files/customer-images/19.png",
+      "files/customer-images/20.png"
+    ]
+  },
   "mamapapa001": {
     "name": "Mama & Papa",
     "message": "Your Sintra board represents hours of careful craftsmanship and attention to detail. Each element was thoughtfully chosen to create something truly one-of-a-kind for you.",
